@@ -3,20 +3,34 @@
 <html>
 <head>
     <title>About</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/zona-pro" rel="stylesheet">
 </head>
 
 <body>
     <div class="navbar">
-        <button><a href="index.html">Home</a></button>
-        <button><a href="about.html">About</a></button>
-        <button><a href="project.html">Project</a></button>
-        <button><a href="showcase.html">Showcase</a></button>
+        <button class="nav-button" onclick="document.location='index.html'"><a class="nav-link" href="index.html">Home</a></button>
+        <button class="nav-button" onclick="document.location='about.html'"><a class="nav-link nav-bold" href="about.html">About</a></button>
+        <button class="nav-button" onclick="document.location='project.html'"><a class="nav-link" href="project.html">Project</a></button>
+        <button class="nav-button" onclick="document.location='showcase.html'"><a class="nav-link" href="showcase.html">Showcase</a></button>
     </div>
     <div class="about">
-        <div class="about-box">Andrew: I look forward to completing more projects with these guys too!</div>
-        <div class="about-box">Edwin: I am a first year Mcmaster cs student and i am excieted to complete more projects with these guys.</div>
-        <div class="about-box">Mekaeel: I look forward to completing more projects with these guys!</div>
+        <h1 class="section-heading">About us</h1>
+        <p class="section-desc about-desc">We are all first year Computer Science students enrolled in COMPSCI 1XD3. We are highliy motivated developers who love programming. To learn more about us, checkout the information below!</p>
+        <div class="about-box-container">
+            <div class="about-box">
+                <h3 class="about-box-title">Andrew</h3>
+                <p class="about-box-desc">I look forward to completing more projects with these guys too!</p>
+            </div>
+            <div class="about-box">
+                <h3 class="about-box-title">Edwin</h3>
+                <p class="about-box-desc">I am a first year Mcmaster cs student and i am excieted to complete more projects with these guys.</p>
+            </div>
+            <div class="about-box">
+                <h3 class="about-box-title">Mekaeel</h3>
+                <p class="about-box-desc">I look forward to completing more projects with these guys!</p>
+            </div>
+        </div>
     </div>
 </body>
 

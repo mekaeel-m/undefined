@@ -1,9 +1,0 @@
-Places4Students is an extremely badly designed website that violates multiple design principles such as consistency, ease of navigation, and universal usability.
-
-In terms of consistency, the site has multiple different designs and themes depending on whether the user has logged in, which creates confusion within the user as to what site they are actually accessing. Additionally the design of the changes depending on the page once logged in as well, with colors and themes randomly changing. However for the purposes of the site itself it does not greatly impact usability.
-
-Universal usability is also an issue the site faces, with mobile users basically being unable to use the app because of improper scaling as well as badly designed navigation features for mobile. You must somehow intuitively find the navbar and from there find the search listings button in order to use the site for the purpose that 90% of its users are looking for.
-
-The greatest sin of the site however is it's navigation issues. It is extremely difficult to find what you are actually looking for amongst the many meaningless features built into the site. The site does not allow you to search by location or by words within the listing meaning that unless you save a listing yourself, it is very difficult to find the house you were previously looking at. Additionally, landlords abuse the tags section of the site, advertising single bedrooms as 4 bedroom apartments and not bothering to take down or update the listing after renting out all the slots. 
-
-It would be an undertaking to improve the site so that it follows the design principles it currently doesn't however it serves as a warning sign as to the mistakes that we should avoid making in our future projects.

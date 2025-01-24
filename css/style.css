@@ -1,0 +1,194 @@
+:root {
+    --background: #FFFFFF;
+    --navbar-background: #ffffff;
+
+    --text-main: black;
+    --text-secondary: rgb(117, 117, 117);
+
+    --bg-secondary: rgb(225, 225, 225);
+    --bg-third: rgb(243, 243, 243);
+
+    --primary-color: rgb(78, 57, 183);
+    --secondary-color: rgb(63, 230, 245);
+}
+::-moz-selection { /* Code for Firefox */
+  color: var(--bg-third);
+  background: var(--primary-color);
+}
+
+::selection {
+  color: var(--bg-third);
+  background: var(--primary-color);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zona Pro', sans-serif;
+    background-color: var(--background);
+}
+h1, h2, h3, h4, h5, h6, p, a, div {
+    margin: 0;
+}
+a {
+    font-family: 'Zona Pro', sans-serif;
+}
+/* ------------ global styles ------------ */
+.section-heading {
+    margin: 2rem 0;
+    color: var(--text-main);
+}
+.section-desc {
+    font-weight: 200;
+    color: var(--text-secondary);
+    line-height: 1.5rem;
+}
+.gradient-text {
+  background-image: linear-gradient(261deg, var(--primary-color), var(--secondary-color));
+  background-size: 250% 250%;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-animation 4s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* ------------ navbar ------------ */
+.navbar {
+    background-color: var(--navbar-background);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+.nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: .3rem;
+    font-size: 2em;
+    margin: 0 1rem;
+    &:hover {
+        background-color: var(--bg-third);
+        font-size: 2rem;
+        border-radius: 50px;
+        a {
+            color: var(--black)
+        }
+    }
+}
+.nav-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    padding: 1rem;
+}
+.nav-bold {
+    font-weight: 500;
+    color: var(--text-main)
+}
+/* ------------ home page ------------ */
+.hero-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-title {
+    font-size: 5rem;
+    font-weight: 600;
+    margin: 2rem;
+    width: 90vw;
+}
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+.hero-desc {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+    width: 60%;
+}
+.hero-motto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10rem;
+    background-color: var(--secondary-color);
+}
+.hero-motto-motto {
+    font-size: 3rem;
+}
+.hero-motto-heading {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+/* ------------ about page ------------ */
+.about {
+    padding: 30vh 10vw;
+}
+.about-box {
+    width: 100%;
+    background-color: var(--navbar-background);
+    border: 2px solid var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 2px;
+}
+.about-desc {
+    margin-bottom: 10rem;
+}
+.about-box-container {
+    display: flex;
+    gap: 1rem;
+}
+.about-box-desc {
+    color: var(--text-secondary);
+    font-weight: 200;
+}
+.about-box-title {
+    margin-bottom: 1rem;
+    color: var(--text-main)
+}
+/* ------------ project page ------------ */
+.project {
+    padding: 30vh 10vw;
+}
+/* ------------ showcase page ------------ */
+.showcase {
+    padding: 30vh 10vw;
+}
+.showcase-heading {
+    margin: 2rem 0;
+}
+.showcase-img {
+    margin: 1rem 0;
+    width: 100%;
+    height: auto;
+}
+.showcase-link {
+    margin: 1rem 0;
+    font-weight: 600;
+    color: var(--text-main);
+
+}
+.showcase-desc {
+    margin: .5rem 0;
+}
