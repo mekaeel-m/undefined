@@ -37,10 +37,14 @@ a {
     margin: 2rem 0;
     color: var(--text-main);
 }
+.section-subheading {
+    margin: 2rem 0;
+}
 .section-desc {
     font-weight: 200;
     color: var(--text-secondary);
     line-height: 1.5rem;
+    margin: .5rem 0;
 }
 .gradient-text {
   background-image: linear-gradient(261deg, var(--primary-color), var(--secondary-color));
@@ -141,7 +145,8 @@ a {
     font-weight: 200;
     margin-bottom: 1rem;
 }
-/* ------------ about page ------------ */
+
+/* -------- about page ------------ */
 .about {
     padding: 30vh 10vw;
 }
@@ -188,7 +193,4 @@ a {
     font-weight: 600;
     color: var(--text-main);
 
-}
-.showcase-desc {
-    margin: .5rem 0;
 }
