@@ -145,7 +145,10 @@ a {
     font-weight: 200;
     margin-bottom: 1rem;
 }
-
+canvas {
+    position: absolute;
+    z-index: -1000;
+}
 /* -------- about page ------------ */
 .about {
     padding: 30vh 10vw;
