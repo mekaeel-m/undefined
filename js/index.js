@@ -3,11 +3,19 @@ window.onload = function() {
     let canvas = document.getElementById("canvas")
     ctx = canvas.getContext("2d")
 
-    blob = new Blob("../images/blob.svg", ctx)
+    blob1 = new Blob("../images/blob.svg", ctx, .2, .3)
+    blob2 = new Blob("../images/blob.svg", ctx, -.4, .1)
     setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
-        blob.updatePos(ctx)
-        blob.draw(ctx)
+        blob1.updatePos(ctx)
+        blob1.draw(ctx)
+        blob2.updatePos(ctx)
+        blob2.draw(ctx)
+
+        ctx.font = "48px Tahoma";
+        ctx.fillStyle = "#D3D3D3"
+        ctx.textAlign = "center"
+        ctx.fillText("We are the best", canvasW / 2, canvasH / 2);
     }, 1)
 }
 
@@ -16,11 +24,11 @@ class Blob {
     y = 100;
     w = 200;
     h = 200;
-    xVel = .5;
-    yVel = .5;
-    constructor(src, ctx) {
+    constructor(src, ctx, xVel, yVel) {
         this.img = new Image()
         this.img.src = src
+        this.xVel = xVel
+        this.yVel = yVel
         this.img.onload = () => {
             this.draw(ctx)
             this.img.id = "blob"
@@ -29,7 +37,7 @@ class Blob {
     
     updatePos(ctx) {
         let isAbove = this.y < -this.h + navH;
-        let isBelow = this.y > (canvasH - this.h);
+        let isBelow = this.y > (canvasH - this.h - 30);
         let isRight = this.x > (canvasW - this.w);
         let isLeft = this.x < -this.w;
 
