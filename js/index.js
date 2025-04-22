@@ -15,7 +15,6 @@ window.onload = function() {
         ctx.font = "48px Tahoma";
         ctx.fillStyle = "#D3D3D3"
         ctx.textAlign = "center"
-        ctx.fillText("We are the best", canvasW / 2, canvasH / 2);
     }, 1)
 }
 
