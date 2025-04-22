@@ -197,3 +197,8 @@ canvas {
     color: var(--text-main);
 
 }
+
+li {
+    font-weight: 200;
+    color: var(--text-secondary);
+}
