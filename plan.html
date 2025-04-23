@@ -23,7 +23,7 @@
         <p class="section-desc">Client name: Hansen Cheng (he is a friend of Mekaeel)</p>
 
         <h1 class="section-heading">Purpose</h1>
-        <p class="section-desc">We are making a web app to showcase our client's Roblox projects and animations. These project files, along with some descriptive information about the purpose of the project and possibly some live demo's if possible. We will then showcase these animations in a clean UI. We will also make an admin page so our client can update the projects he is showcasing. We trying to showcase our client's projects to attract more customers!</p>
+        <p class="section-desc">We are making a web app to showcase our client's Roblox projects and animations. These project files, along with some descriptive information about the purpose of the project <s>and possibly some live demo's</s> (Our client said his projects did not have any live demos associated with them). We will then showcase these animations in a clean UI. We will also make an admin page so our client can update the projects he is showcasing. We trying to showcase our client's projects to attract more customers!</p>
 
         <h3 class="showcase-heading">Data Description</h3>
         <p class="section-desc showcase-desc">
@@ -42,7 +42,7 @@
             projectDesc: TEXT
         </p>
         <p class="section-desc showcase-desc">
-            projectLink: TEXT (optional)
+            <s>projectLink: TEXT (optional)</s> (After talking with our client he said this was not needed. None of his posts are available through links.)
         </p>
 
         <h3 class="showcase-heading">Functions Preformed By The App</h3>
@@ -61,18 +61,18 @@
 
         <h3 class="showcase-heading">The Increments</h3>
         <p class="section-desc showcase-desc">
-            April 3: Design layout finished, frontend layout, impliment database table.<br>
-            Andrew: Designed UI using Figma. Added basic auth using php and hashing the password. Added navbar to be used across every page.<br>
-            Mekaeel: Basic Database format created, Login System ready to use, and backend ready to be linked up with other parts of the project.<br>
-            Edwin: I created th 3D render window animation canvas. I made a layout for the gallery.<br>
-            Kaihang: created 2 vision of contact page, base on database and base on email. created stylesheet for contact page.
+            April 3: Design layout finished, frontend layout, impliment database table.<br><br>
+            Andrew: Designed UI using Figma. Added basic authentication using php to verify the user has entered the correct password. Added navbar to be used across every page. Also created the initial landing page that promotes Hansen's work. Used Javascript to cycle through current tiles in the gallery at the bottom of the homepage.<br><br>
+            Mekaeel: Basic Database format created, Login System ready to use, and backend ready to be linked up with other parts of the project.<br><br>
+            Edwin: I created th 3D render window animation canvas. I made a layout for the gallery.<br><br>
+            Kaihang: created 2 vision of contact page, base on database and base on email. created stylesheet for contact page.<br><br>
         </p>
         <p class="section-desc showcase-desc">
-            April 22nd: Full site is finished with all features integrated as desired. <br>
-            Andrew: Completed the frontend and backend for the administration page where Hansen can add and delete projects as well as the SQL integration. <br>
-            Mekaeel: In unison with Andrew worked on the backend for the administration page as well as the SQL database. <br>
-            Edwin: Created a box where a site vistor can view and interact with a 3d model/animation, as well as the layout for the works page.<br>
-            Kaihang: Coded the backend for the email contact page and worked through issues with the built-in PHP issues. <br>
+            April 23nd: Full site is finished with all features integrated as desired. <br><br>
+            Andrew: Created admin dashboard for Hansen to view the number of current tiles in his gallery. Created an update page where he can view all tiles in a table, then delete or update the tiles. Changed the navbar when logged in, to allow for easy navigation to update and add tiles. Modified other php code to use best practises when getting input parameters. Seperated certain php files into a backend folder. These folders just return json and are fetched with AJAX from the client. This is why I seperated them.<br><br>
+            Mekaeel: In unison with Andrew worked on the backend for the administration page as well as the SQL database. <br><br>
+            Edwin: Created a box where a site vistor can view and interact with a 3d model/animation, as well as the layout for the works page.<br><br>
+            Kaihang: Coded the backend for the email contact page and worked through issues with the built-in PHP issues. <br><br>
         </p>
 
         <h3 class="showcase-heading">Client Feedback</h3>
@@ -97,7 +97,7 @@
                 <li>Funneling potential client requests to his email through the site</li>
             </ul>
             </li>
-            <li>Our Priority:
+            <li>Our Next Steps:
             <ul>
                 <li>Making a gallery that shows off both his 2d and 3d works, with a highlight on his singular 3d work, although his work is mostly 2d</li>
                 <li>Contact page that stores the emails and requests in the database to view at his convenience</li>
@@ -106,8 +106,13 @@
             </li>
         </ul>
         <p>
+<<<<<<< HEAD
             Unfortunately we were not able to get sending the email through PHP working, so we had to pivot to storing them within the database instead. We still keep all of the same data and information, just changing that it can be viewed in the admin page instead of sending an email to him.<br>
             Otherwise, the client is very happy the site so far, and does not have any other significant changes he wants to make to the site. <br>
+=======
+            <br>
+            The clients requested changes are above. Anything with strikethrough is what we have updated since the initial plan. <br>
+>>>>>>> afabe8285745dc00bb5363e8afabdc46d5a52962
             Additionally we have shown him our development plan and a mockup for the final site and is pleased with our plans for the final version. <br>
             Hansen just wanted to reiterate to us the important factors at play for his website and as such with him we created an updated client goals section shown directly above this text.
         </p>
